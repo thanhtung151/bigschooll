@@ -18,7 +18,7 @@ namespace bigschooll.Controllers
         }
 
         // GET: CoursesController
-        public ActionResult Create()
+        public ActionResult Create(CoursesControllerController viewNodel)
         {
             var viewModel = new CourseViewModel
             {
@@ -28,6 +28,7 @@ namespace bigschooll.Controllers
         }
         [Authorize]
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Create(CourseViewModel viewModel)
         {
             if (!ModelState.IsValid)

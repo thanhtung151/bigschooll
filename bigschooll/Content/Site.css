@@ -22,3 +22,38 @@ select,
 textarea {
     max-width: 280px;
 }
+/*Override the default bootstrap Nar bar by Tùng Nguyễn*/
+.navbar-inverse{
+    background-color:#ff6a00;
+    border-color:#ffd800;
+    
+}
+.navbar-inverse.navbar-nav >li>a{
+    color: #ff0000;
+}
+.navbar-inverse.navbar-brand{
+    color:#ff0000;
+}
+/*Course layout*/
+
+
+
+  .course{
+    list-style: none;
+}
+   .course > li {
+    position:relative;
+    margin-bottom:30px;
+}
+.course > li.date {
+    text-align:center;
+    background-color:#ff6a00;
+    color: #ff0000;
+    width:60px;
+    border-radius:8px;
+}
+.course > li.details {
+    position:absolute;
+    top: 0;
+    left: 70px;
+}
